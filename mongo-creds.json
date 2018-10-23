@@ -1,0 +1,6 @@
+{
+    "Username": "root",
+    "Password": "root",
+    "Addrs": ["localhost:27017"],
+    "Database": "admin"
+}
