@@ -42,8 +42,8 @@ func GetDBConfigs() *mgo.DialInfo {
 
 	//Override values from environment variables if they are set.
 	dbConfig.Database = utils.GetEnv("Database", dbConfig.Database)
-	dbConfig.Database = utils.GetEnv("Username", dbConfig.Database)
-	dbConfig.Database = utils.GetEnv("Password", dbConfig.Database)
+	dbConfig.Username = utils.GetEnv("Username", dbConfig.Username)
+	dbConfig.Password = utils.GetEnv("Password", dbConfig.Password)
 	return dbConfig
 }
 
